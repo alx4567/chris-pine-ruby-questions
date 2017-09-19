@@ -4,7 +4,7 @@ puts 'Enter another year.'
 year2 = gets.chomp.to_i
 leap_years = []
 
-if year1 < year2
+if year1 <= year2
   while year1 <= year2
      if (year1 % 4 == 0) && (year1 % 10 != 0 || year1 % 400 == 0)
        leap_years << year1.to_s
